@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+#root {
+  margin: 10px auto;
+  width: 900px;
+  display: flex;
+  border-radius: 25px;
+  box-shadow: 0px 0px 30px 12px rgba(0, 0, 0, 0.75);
+}
+
+nav {
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+.btn {
+  margin: 30px auto;
+  font-size: 30px;
+  color: #eee;
+  text-shadow: 1px 1px 2px black, 0 0 4px grey;
+}
+
+a.link {
+  width: 335px;
+  margin: 0 0 0 50px;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 4px grey;
+  transition: .3s;
+}
+
+a.link:hover {
+  background-color: rgb(209, 209, 209);
+  border-radius: 20px;
+}
+
+a.edit {
+  position: relative;
+  top: -39px;
+  left: 140px;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 5px 20px;
+  margin: 5px auto;
+  transition: .3s;
+}
+
+a.btn {
+  margin: 20px auto;
+  transition: .3s;
+}
+
+a.btn:hover {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin: 40px;
+}
+
+img {
+  height: 250px;
+  margin: 10px auto;
+}
+
+label {
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+form>input,
+textarea,
+.cancel {
+  width: 300px;
+  border: 1px solid #333;
+  color: #333;
+  padding-left: 10px;
+  border-radius: 20px;
+  height: 30px;
+}
+
+form>textarea {
+  border-radius: 20px 0 0 20px;
+  padding-top: 10px;
+  height: 100px;
+}
+
+form>textarea:focus,
+form>input:focus {
+  outline: none;
+  background-color: #333;
+  color: #eee;
+}
+
+input.sub,
+button.cancel {
+  margin: 20px 0;
+  padding: 0;
+  font-size: 16px;
+  height: 35px;
+  width: 150px;
+  text-align: center;
+  background-color: #fff;
+  transition: .3s;
+}
+
+button.cancel {
+  position: relative;
+  bottom: 115px;
+  left: 200px;
+  outline: none;
+}
+
+button.cancel:hover,
+input.sub:hover,
+a.edit:hover {
+  background-color: #333;
+  color: #eee;
+  cursor: pointer;
+}
+
+img {
+  height: 200px;
+  margin-left: 140px;
+}
+
+h2>span,
+h3>span {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+h2,
+h3 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+p {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #333;
+  color: #eee
+}
+
+label::before {
+  content: '*';
+  position: relative;
+  top: 23px;
+  color: red;
+}
+
+.valid {
+  background-color: red;
+}
